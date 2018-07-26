@@ -9,9 +9,9 @@ type Contact {
   address: String
   city: String
   state: String
-  friends(first: Int = 10, offset: Int = 0): [User] @relation(name: "FRIENDS", direction: "BOTH")
-  coworkers(first: Int = 10, offset: Int = 0): [User] @relation(name: "WORKSWITH", direction: "BOTH")
-  relatives(first: Int = 10, offset: Int = 0): [User] @relation(name: "RELATEDTO", direction: "BOTH")
+  friends(first: Int = 10, offset: Int = 0): [Contact] @relation(name: "FRIENDS", direction: "BOTH")
+  coworkers(first: Int = 10, offset: Int = 0): [Contact] @relation(name: "WORKSWITH", direction: "BOTH")
+  relatives(first: Int = 10, offset: Int = 0): [Contact] @relation(name: "RELATEDTO", direction: "BOTH")
   reminders(first: Int = 10, offset: Int = 0): [Reminder] @relation(name: "REMINDTO", direction: "OUT")
 }
 

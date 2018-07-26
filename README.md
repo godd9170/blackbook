@@ -1,6 +1,6 @@
 # Blackbook
 
-Built off of the [grand-stack-starter](https://github.com/grand-stack/grand-stack-starter) repo, a CRM organized by relationships.
+Built off of the [grand-stack-starter](https://github.com/grand-stack/grand-stack-starter) repo, a CRM organized by relationships.`
 
 ## Quickstart
 
