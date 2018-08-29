@@ -1,13 +1,13 @@
 {
-  "name": "grand-stack-starter-api",
+  "name": "blackbook",
   "version": "0.0.1",
-  "description": "API app for GRANDstack",
+  "description": "Graph CRM",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/nodemon --exec babel-node src/index.js"
   },
-  "author": "William Lyon",
+  "author": "Hank",
   "license": "MIT",
   "dependencies": {
     "apollo-boost": "^0.1.7",
