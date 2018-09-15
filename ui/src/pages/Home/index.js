@@ -1,9 +1,9 @@
 import React, { Fragment, Component } from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
-import ContactGraph from "../components/ContactGraph";
-import ControlPanel from "../components/ControlPanel";
-import NavBar from "../components/NavBar";
+import ContactGraph from "./components/ContactGraph";
+import ControlPanel from "./components/ControlPanel";
+import NavBar from "./components/NavBar";
 import styled from "styled-components";
 
 const Main = styled.div`
@@ -40,6 +40,7 @@ class Home extends Component {
   };
 
   render() {
+    const { match } = this.props;
     const { selectedUser } = this.state;
     return (
       <Query
@@ -54,8 +55,6 @@ class Home extends Component {
         `}
       >
         {({ loading, error, data }) => {
-          console.log("DATA: ", data);
-          console.log("Error: ", error);
           if (loading) return <p>Loading...</p>;
           if (error) return <p>Error</p>;
 

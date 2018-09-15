@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Bar = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ export default class NavBar extends Component {
     return (
       <Bar>
         <Logo>Blackbook</Logo>
+        <Link to={`/new-contact`}>add</Link>
         <RightNav />
       </Bar>
     );
